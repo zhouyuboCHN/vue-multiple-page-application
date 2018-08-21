@@ -1,0 +1,30 @@
+@font-face{
+  font-family:'thefont';
+  src:url('../fonts/fontawesome-webfont.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa{
+  display: inline-block;
+  font:normal normal normal 14px/1 thefont;
+  font-size: inherit;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-size: 40px;
+}
+.fa-folder::before{
+  content: "\f07b";
+}
+.button{
+  width: 220px;
+  height: 70px;
+  line-height: 70px;
+  display: block;
+  background: #000;
+  box-shadow: 0 0 10px #f44777;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 30px;
+  text-decoration: none;
+}
