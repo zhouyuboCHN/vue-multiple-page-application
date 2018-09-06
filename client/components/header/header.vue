@@ -1,28 +1,20 @@
 <template>
-  <div id="app">
-    <CHeader></CHeader>
-    <img src="./assets/index.jpg">
-    <a href="./product.html" class="button">跳转页面</a>
-    <h1 class="indexMessage">{{ text }}</h1>
-    <h2 class="fa fa-folder">首页</h2>
+  <div id="header">
+    <h1>{{text}}</h1>
   </div>
 </template>
 
 <script>
-import CHeader from '../../components/header/header.vue'
 import { http } from '../../tools'
 
 import '../../rootStatic/style/reset.scss'
-import './index.scss'
+import './header.scss'
 
 export default {
-  components:{
-    CHeader
-  },
-  name: 'app',
+  name: 'CHeader',
   data () {
     return {
-      text: '(≧∇≦)ﾉ'
+      text: 'header'
     }
   },
   mounted() {
